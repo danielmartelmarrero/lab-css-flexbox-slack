@@ -19,9 +19,7 @@ nav{
     
 }
 nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
+    display: none;
 }
 #nav-list{
     display: flex;
@@ -209,26 +207,36 @@ header{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 1000px){
+    .nav-menu-button{
+        display: none;
+    }
+    #nav-right{
+        display: flex;
+        align-items: center;
+    }
+    #nav-left{
+        display: flex;
+        align-items: center;
+        margin-left: 25px;
+    }
+    nav ul{
+        list-style: none;
+        display:flex;
+    } 
+    nav ul li{
+        font-weight: bold;
+        margin-right: 20px;
+    }
+    nav  ul a{
+        color: white;
+        text-decoration: none;
+    }
+    /*----------------------------------*/
     header{
         display: flex;
         flex-direction: row;
         align-content: space-between;
-    }
-    #header-img{
-        
     }
     .header-title{
         font-size: 50px;
